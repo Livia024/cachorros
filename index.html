@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de dogs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gerador de dogs</h1>
+    <button id="button" onclick="geradorDeDogs()">Gerar dogs</button>
+<br><br>
+<img id="dogs" src="" alt="">
+
+    <script>
+function geradorDeDogs(){
+    fetch('https://dog.ceo/api/breeds/image/random')
+    .then(res => res.json())
+    .then(data => {
+document.getElementById("dogs").src = data.message;
+    })
+    
+}
+
+    </script>
+</body>
+</html>

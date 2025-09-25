@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(171, 255, 227);
+   align-items: center;
+   display :flex ;
+   justify-content: center;
+   flex-direction: column;
+}
+button{
+
+    color: rgb(4, 58, 40);
+    border-radius: 10px;
+}
+img{
+    border-radius: 20px;
+    
+}
